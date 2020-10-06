@@ -1,5 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
+import IndecisonApp from "./components/IndecisionApp";
 
-const template = <p>This is jsx!!!</p>
-ReactDOM.render(template, document.getElementById('app'))
+ReactDOM.render(<IndecisonApp />, document.getElementById("app"));
