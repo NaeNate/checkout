@@ -15,10 +15,14 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            "plugins": ["@babel/plugin-proposal-class-properties"],
-            "presets": ["@babel/preset-react", "@babel/preset-env"]
-        }
+            plugins: ["@babel/plugin-proposal-class-properties"],
+            presets: ["@babel/preset-react", "@babel/preset-env"],
+          },
         },
+      },
+      {
+        test: /\.s?css$/,
+        use: ["style-loader", "css-loader", 'sass-loader'],
       },
     ],
   },
