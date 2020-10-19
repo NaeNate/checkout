@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate",
+  "name": "checkout",
   "version": "1.0.0",
-  "description": "Put your life in the hands of a script.",
+  "description": "Buy some stuff",
   "main": "index.js",
   "scripts": {
     "serve": "live-server public",
