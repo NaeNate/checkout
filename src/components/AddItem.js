@@ -23,9 +23,10 @@ export default class AddItem extends React.Component {
       e.target.elements.goodsName.value = "";
       e.target.elements.price.value = "";
     }
-
-    
   };
+  handleChangeRemoveState = () => {
+    this.props.handleChangeRemoveState()
+  }
   render() {
     return (
       <div>
@@ -35,6 +36,7 @@ export default class AddItem extends React.Component {
           <input placeholder="Price" name="price" id="ItemPriceInput"></input>
           <button>Add Item</button>
         </form>
+        <button onClick={this.handleChangeRemoveState}>Remove Item</button>
       </div>
     );
   }

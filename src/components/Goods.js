@@ -5,14 +5,15 @@ const Goods = (props) => (
     {props.goods.map((good) => (
       <button
         onClick={() => {
-          props.handleAddTotal(good.price)}
-        }
-        key={good.goodsName}>
+          props.handleAddTotal(good);
+        }}
+        key={good.goodsName}
+      >
         {good.goodsName}
-        <br />${good.price} 
+        <br />${good.price}
       </button>
     ))}
   </div>
 );
 
-export default Goods
+export default Goods;
